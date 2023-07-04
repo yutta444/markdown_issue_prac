@@ -25,7 +25,8 @@
 # リンク
 ウェブ関連技術の標準化は [World Wide Web Consortium (W3C)](http://www.w3.org/) などによって行われています。
 
-[810](images/%E9%87%8E%E7%8D%A3%E5%85%88%E8%BC%A9.jpg)
+# 画像リンク
+![810](images/野獣先輩.jpg)
 
 # 強調
 野獣*先輩*
@@ -37,3 +38,12 @@ public static void main(String []){
     system.out.println("hello world")
 }
 ```
+
+# 水平線
+***
+
+# 表
+|見出し1|見出し2 |
+| -- | -- |
+| 内容1-1 | 内容2-1|
+| 内容1-2 | **内容2-2**|
