@@ -1,39 +1,29 @@
 # mermaidで記述できるダイアグラムのチュートリアル
 
-### 3. クラス図 (Class Diagram)
-```
-classDiagram
-    class Animal {
-        + name : string
-        + eat() : void
-    }
-    
-    class Dog extends Animal {
-        + bark() : void
-    }
-    
-    class Cat extends Animal {
-        + meow() : void
-    }
-    
-    Animal <|-- Dog
-    Animal <|-- Cat
-```
+フローチャート（フロー図）とは、目標を結果へと導く為の工程を視覚的に図で表現したものです。 複雑な業務プロセス、システム、アルゴリズム等を分かりやすくする「見える化」する為に利用されます。 フロー図を作成する時の基本的な決まり事はありますが【シンプルで誰が見てもわかりやすいもの】を作成する事が効果的で一番重要です。
+
+今回はNotionでのプレビュー方法を記載します。NotionでMermaid記法をプレビューするには以下の３ステップです。
+
+
+
+1. コードブロック内に「"'」と入力
+2. mermaidを選択
+3. mermaid記法にならってテキストで図形を定義
+
+試しに以下のコードを入力
+フローチャートでは、「graph」というキーワードに続けて図形の向きを指定します。
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+
+すると以下のように、プレビューが表示されます。
+
 ```mermaid
-classDiagram
-    class Animal {
-        + name : string
-        + eat() : void
-    }
-    
-    class Dog extends Animal {
-        + bark() : void
-    }
-    
-    class Cat extends Animal {
-        + meow() : void
-    }
-    
-    Animal <|-- Dog
-    Animal <|-- Cat
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
 ```
